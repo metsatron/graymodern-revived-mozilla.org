@@ -1,0 +1,46 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+spinbuttons {
+  height: 16px;
+}
+
+.spinbuttons-button {
+  border: 2px solid;
+  -moz-border-top-colors: #5D5D5D #B1B1B1;
+  -moz-border-right-colors: #2D2D2D #A7A7A7;
+  -moz-border-bottom-colors: #2D2D2D #9E9E9E;
+  -moz-border-left-colors: #5D5D5D #B1B1B1;
+  border-radius: 0;
+  background: #B1B1B1 50% 50% no-repeat;
+  width: 13px;
+  min-width: 13px;
+  margin: 0;
+  -moz-box-flex: 1;
+}
+
+.spinbuttons-button:hover:active {
+  -moz-border-top-colors: #838383 #898989;
+  -moz-border-right-colors: #838383 #898989;
+  -moz-border-bottom-colors: #838383 #898989;
+  -moz-border-left-colors: #838383 #898989;
+  background-color: #909090;
+}
+
+.spinbuttons-button[disabled="true"] {
+  background-color: #B7B7B7;
+  border: 2px solid !important;
+  -moz-border-top-colors: #838383 #C7C7C7 !important;
+  -moz-border-right-colors: #838383 #A9A9A9 !important;
+  -moz-border-bottom-colors: #838383 #A9A9A9 !important;
+  -moz-border-left-colors: #838383 #C7C7C7 !important;
+}
+
+.spinbuttons-up {
+  list-style-image: url("chrome://global/skin/scrollbar/mini-btn-up.gif");
+}
+
+.spinbuttons-down {
+  list-style-image: url("chrome://global/skin/scrollbar/mini-btn-dn.gif");
+}

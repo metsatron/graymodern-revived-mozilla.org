@@ -1,0 +1,1 @@
+# Gray Modern Revived SeaMonkey Theme

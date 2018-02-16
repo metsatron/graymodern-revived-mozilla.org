@@ -1,0 +1,145 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== listbox.css =======================================================
+  == Styles used by XUL listbox-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: listbox ::::: */
+
+listbox {
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #BEBEBE #5D5D5D;
+  -moz-border-right-colors: #F8F8F8 #5D5D5D;
+  -moz-border-bottom-colors: #F8F8F8 #5D5D5D;
+  -moz-border-left-colors: #BEBEBE #5D5D5D;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+listbox[disabled="true"] {
+  color: #999999;
+}
+
+/* ::::: listitem ::::: */
+
+listitem {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+listbox:focus > listitem[current="true"] {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+}
+
+listitem[selected="true"] {
+  background-color: #DDDDDD;
+  color: #000000;
+}
+
+listbox:focus > listitem[selected="true"] {
+  background-color: #424242;
+  color: #FFFFFF;
+}
+
+listcell {
+  padding-top: 0px;
+  padding-bottom: 1px;
+  -moz-padding-start: 2px;
+  -moz-padding-end: 0px;
+}
+
+/* ::::: listcell checkbox ::::: */
+
+.listcell-check {
+  margin: 0px 2px;
+  list-style-image: url("chrome://global/skin/checkbox/cbox.gif");
+}
+
+.listcell-check[checked="true"] {
+  list-style-image: url("chrome://global/skin/checkbox/cbox-check.gif");
+}
+
+.listcell-check[disabled="true"] {
+  border-color: #999999;
+  list-style-image: url("chrome://global/skin/checkbox/cbox-dis.gif");
+}
+
+.listcell-check[disabled="true"][checked="true"] {
+  list-style-image: url("chrome://global/skin/checkbox/cbox-dis-check.gif");
+}
+
+/* ::::: listheader ::::: */
+
+listheader {
+  -moz-box-align: center;
+  border: 2px solid;
+  -moz-border-top-colors: #EEEEEE #DDDDDD;
+  -moz-border-right-colors: #636363 #A5A5A5;
+  -moz-border-bottom-colors: #636363 #A5A5A5;
+  -moz-border-left-colors: #EEEEEE #DDDDDD;
+  padding: 0 4px;
+  background-color: #DDDDDD;
+  color: #000000;
+}
+
+listheader[sortable="true"]:hover:active {
+  border-top: 2px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 2px solid;
+  -moz-border-top-colors: #A5A5A5 #DDDDDD;
+  -moz-border-right-colors: #A5A5A5;
+  -moz-border-bottom-colors: #A5A5A5;
+  -moz-border-left-colors: #A5A5A5 #DDDDDD;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  -moz-padding-start: 5px;
+  -moz-padding-end: 4px;
+}
+
+.listheader-icon {
+  -moz-margin-end: 2px;
+}
+
+.listheader-label {
+  margin: 0px !important;
+}
+
+/* ..... sort direction icon ..... */
+
+.listheader-sortdirection {
+  list-style-image: none;
+}
+
+.listheader-sortdirection[sortDirection="ascending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-asc.gif");
+}
+
+.listheader-sortdirection[sortDirection="descending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-dsc.gif");
+}
+
+/* ::::: listcell ::::: */
+
+.listcell-label {
+  margin: 0px !important;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 0px;
+  white-space: nowrap;
+}
+
+.listcell-icon {
+  -moz-margin-end: 2px;
+}
+
+.listcell-label[disabled="true"] {
+  color: #999999;
+}

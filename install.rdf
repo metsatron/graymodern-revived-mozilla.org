@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>graymodern-revived@mozilla.org</em:id>
+		<em:name>SeaMonkey Gray Modern Revived</em:name>
+		<em:internalName>GrayModern</em:internalName>
+		<em:type>4</em:type>
+		<em:version>0.6</em:version>
+		<em:creator>Mozilla Contributors</em:creator>
+		<em:localized>
+			<Description>
+				<em:locale>en-US</em:locale>
+				<em:name>SeaMonkey Gray Modern Revived</em:name>
+ 				<em:description>The Classic Gray Modern Theme.</em:description>
+			</Description>
+		</em:localized>
+		<em:bootstrap>false</em:bootstrap>
+		<em:unpack>true</em:unpack>
+		<em:targetApplication>
+			<Description>
+				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+				<!-- SeaMonkey -->
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>2.50</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

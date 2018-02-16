@@ -1,0 +1,14 @@
+skin messenger GrayModern chrome/messenger/
+style chrome://global/content/customizeToolbar.xul chrome://messenger/skin/smime/msgCompSMIMEOverlay.css
+skin messenger-newsblog GrayModern chrome/messenger-newsblog/
+skin global GrayModern chrome/global/
+style chrome://global/content/customizeToolbar.xul chrome://messenger/skin/messengercompose/messengercompose.css
+skin global-platform GrayModern chrome/global/
+skin editor GrayModern chrome/editor/
+skin mozapps GrayModern chrome/mozapps/
+style chrome://global/content/customizeToolbar.xul chrome://messenger/skin/primaryToolbar.css
+skin help GrayModern chrome/help/
+style chrome://global/content/customizeToolbar.xul chrome://messenger/skin/addressbook/addressbook.css
+skin navigator GrayModern chrome/navigator/
+style chrome://global/content/customizeToolbar.xul chrome://navigator/skin/navigator.css
+skin communicator GrayModern chrome/communicator/
